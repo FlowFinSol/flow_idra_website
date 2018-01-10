@@ -5,13 +5,7 @@
   }
   .qualitative-research {
     p {
-      line-height: 28px;
       color: #212121;
-    }
-    h5 {
-      padding-top: 20px;
-      padding-bottom: 15px;
-      color: #3f3f3f;
     }
     .list-qualitative-research {
       padding-top: 35px;
@@ -30,13 +24,6 @@
   }
   .list-methods {
     padding-top: 20px;
-    .border {
-      border: solid 1px #c3c3c3;
-      &:hover {
-        border: solid 1px #0068c5;
-        background: #0068c5;
-      }
-    }
     p {
       @include p-our-service;
     }

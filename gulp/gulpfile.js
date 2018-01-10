@@ -15,21 +15,16 @@ gulp.task('serve', ['sass'], function() {
       notify: false
   });
   gulp.watch(path + "/assets/scss/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/sections/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/components/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/news-and-publications/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/News_and_publications_details/*.scss", ['sass']);
   gulp.watch(path + "/assets/scss/about-us/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-service-page-detail/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-media-intelligence/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-market/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-market-quantitative/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-market-qualitative/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-quantitative/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/footer/*.scss", ['sass']);
   gulp.watch(path + "/assets/scss/contact/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/footer/*.scss", ['sass']);
   gulp.watch(path + "/assets/scss/main/*.scss", ['sass']);
-  // gulp.watch(path + "/assets/js/vendors/*.js", ['concat']);
+  gulp.watch(path + "/assets/scss/news-and-publications/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/news-and-publications-details/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/our-services-market-qualitative/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/our-services-market-quantitative/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/our-services-media-intelligence/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/our-services-page/*.scss", ['sass']);
   gulp.watch(path + "/*.html").on('change', browserSync.reload);
   gulp.watch(path + "/assets/js/vendors/*.js").on('change', browserSync.reload);
 });

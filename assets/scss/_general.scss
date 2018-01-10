@@ -57,7 +57,7 @@ body {
   p {
     font-family: 'Merriweather', serif;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
   }
   button {
     font-size: 14px;
@@ -72,6 +72,7 @@ body {
       color: #0068c5;
     }
     &:hover {
+      color: white;
       background: #0068c5;
       a {
         color: white;

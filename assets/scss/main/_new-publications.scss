@@ -31,7 +31,6 @@
   }
   hr {
     opacity: 0.1;
-    // background: #eeeeee;
     margin-bottom: 80px;
   }
   img {
@@ -52,7 +51,6 @@
     }
     p {
       padding: 0 40px;
-      line-height: 28px;
     }
     .tag {
       padding-top: 40px;
@@ -61,7 +59,6 @@
       p {
         font-size: 14px;
         line-height: 16px;
-
       }
     }
   }
@@ -96,29 +93,3 @@
     background: #0068c5;
   }
 }
-// .carousel-control {
-//   width: 0%!important;
-//   text-shadow: none!important;
-//   &.left {
-//     background-image: none!important;
-//   }
-//   &.right {
-//     background-image: none!important;
-//   }
-//   .glyphicon-chevron-left,
-//   .glyphicon-chevron-right {
-//     padding: 15px;
-//     box-shadow: none!important;
-//     top: 60%!important;
-//     // margin-top: 260px!important;
-//     margin-left: 0!important;
-//     margin-right: 0!important;
-//     background: gray;
-//     width: auto!important;
-//     height: auto!important;
-//     font-size: 18px!important;
-//     &:hover {
-//       background-color: #0068c5;
-//     }
-//   }
-// }

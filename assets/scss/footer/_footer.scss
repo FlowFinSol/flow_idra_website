@@ -30,7 +30,6 @@
   }
   .flex-footer-1 {
     @include flex-footer;
-
     padding-top: 100px;
     img {
       padding-bottom: 10px;
@@ -48,7 +47,6 @@
     }
   }
   hr {
-    height: 1px;
     background: #898989;
     opacity: 0.2;
     margin-top: 21px;
@@ -56,15 +54,8 @@
   .flex-footer-3 {
     @include flex-footer;
     padding-top: 10px;
-    // .flex-footer-4 {
-    //   @include flex-footer;
-    //   p {
-    //     padding-right:
-    //   }
-    // }
     p {
       opacity: 1;
-      // text-transform: uppercase;
       font-size: 14px;
     }
   }
