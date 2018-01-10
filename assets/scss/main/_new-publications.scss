@@ -1,0 +1,124 @@
+.news {
+  height: 1000px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-news.jpg);
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 130px;
+    top: -117px;
+    left: 0;
+    right: 0;
+    transform: skewY(0.6deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 130px;
+    bottom: -118px;
+    left: 0;
+    right: 0;
+    transform: skewY(0.6deg);
+  }
+  h3 {
+    color: #ffffff;
+    padding-top: 80px;
+  }
+  hr {
+    opacity: 0.1;
+    // background: #eeeeee;
+    margin-bottom: 80px;
+  }
+  img {
+    width: inherit;
+  }
+  button {
+    margin: 20px 0 40px 40px;
+  }
+  .flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    img {
+      width: 100%;
+    }
+    p {
+      padding: 0 40px;
+      line-height: 28px;
+    }
+    .tag {
+      padding-top: 40px;
+      padding-bottom: 5px;
+      color: #b3b3b3;
+      p {
+        font-size: 14px;
+        line-height: 16px;
+
+      }
+    }
+  }
+}
+.carousel-indicators {
+  bottom: -95px!important;
+  li {
+    border-radius: 0!important;
+    border: none!important;
+    background-color: white!important;
+    padding: 6px;
+    opacity: 0.9;
+    width: 0!important;
+    margin-left: 12px!important;
+  }
+  .active {
+    margin-top: -2px!important;
+    padding: 7px;
+    background: #0068c5!important;
+  }
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background: #0068c5;
+  height: 60px;
+  width: 60px;
+  top: 60%;
+  img {
+    height: 20px;
+  }
+  &:hover {
+    background: #0068c5;
+  }
+}
+// .carousel-control {
+//   width: 0%!important;
+//   text-shadow: none!important;
+//   &.left {
+//     background-image: none!important;
+//   }
+//   &.right {
+//     background-image: none!important;
+//   }
+//   .glyphicon-chevron-left,
+//   .glyphicon-chevron-right {
+//     padding: 15px;
+//     box-shadow: none!important;
+//     top: 60%!important;
+//     // margin-top: 260px!important;
+//     margin-left: 0!important;
+//     margin-right: 0!important;
+//     background: gray;
+//     width: auto!important;
+//     height: auto!important;
+//     font-size: 18px!important;
+//     &:hover {
+//       background-color: #0068c5;
+//     }
+//   }
+// }

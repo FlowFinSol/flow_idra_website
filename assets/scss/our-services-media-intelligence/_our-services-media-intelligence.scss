@@ -1,0 +1,85 @@
+.our-service-media-intell {
+  height: 3160px;
+  p {
+    color: #3f3f3f;
+    line-height: 28px;
+    padding-left: 24px;
+  }
+  h4 {
+    margin-bottom: 30px;
+  }
+  .head-media {
+    h5 {
+      padding: 5px 10px 5px 20px;
+      color: #3f3f3f;
+      border-left: 4px solid #3f3f3f;
+    }
+    img {
+      padding-top: 40px;
+      height: 273px;
+    }
+    p {
+      padding-right: 25px;
+    }
+  }
+  .advertising-intelligence {
+    padding-top: 80px;
+    p {
+      padding-bottom: 30px;
+    }
+    h5 {
+      padding-left: 24px;
+      padding-bottom: 15px;
+      color: #212121;
+    }
+    .li {
+      padding-bottom: 50px;
+      padding-left: 40px;
+      li {
+        padding: 0 0 8px 10px;
+      }
+    }
+  }
+  .editorial-content-monitoring {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    .list-editorial-content-monitoring {
+      padding-top: 35px;
+      .border {
+        border: solid 1px #c3c3c3;
+        &:hover {
+          border: solid 1px #0068c5;
+          background: #0068c5;
+        }
+      }
+      p {
+        color: #3f3f3f;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 11px;
+        height: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .audience-ratings {
+    padding-bottom: 60px;
+    .list-audience-ratings {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+  .customised-monitoring-analysis {
+    .list-customised-monitoring-analysis {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Flow App</title>
+  <link rel="shortcut icon" href="assets/img/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link href="assets/css/form_contact.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+</head>
+<body>
+  <div class="contact-menu">
+    <nav id="top-bar" class="container">
+      <div>
+        <div class="top-bar">
+          <div class="left-items">
+            <a class="logo" href="">
+              <img src="assets/img/icon/logo.svg" alt="">
+            </a>
+            <button class="expand-button" type="button" name="button">
+              <img src="assets/img/icon/menu-icon.png" alt="">
+            </button>
+          </div>
+          <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="About_us.html">ABOUT US</a>
+            <a href="Our_service.html">OUR SERVICES</a>
+            <a href="News_and_publications.html">NEWS</a>
+            <a href="Contact.html" class="active-menu-a">CONTACT</a>
+          </div>
+          <div class="right-items">
+            <img src="assets/img/icon/search.svg" alt="">
+            <img src="assets/img/icon/language.svg" alt="">
+            <p class="language">En</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="contact">
+    <div class="container">
+      <div class="title-page">
+        <h3><img src="assets/img/icon/h1.svg"> CONTACT</h3>
+      </div>
+      <h4>Headquarter Contacts</h4>
+      <div class="head-contact">
+        <div class="row">
+          <div class="col-6"><div id="googleMap" style="width:100%;height:386px;"></div></div>
+          <div class="col-6">
+            <p>Drop us a line to discuss how we can solve your communication challenges.</p>
+            <p>63 Bartoletti Circle Apt. 433 Port Antoniamouth</p>
+            <p>support@flowidra.com</p>
+            <p>667-893-8151</p>
+            <p>
+              <img src="assets/img/icon/fb-blue-icon.svg">
+              <img src="assets/img/icon/twitter-blue-icon.svg">
+              <img src="assets/img/icon/googleplus-blue-icon.svg">
+            </p>
+          </div>
+        </div>
+      </div>
+      <h4>FEEDBACK & COMMENTS</h4>
+      <p>If you have a question or would like to help us improve our services to you and others,
+        please fill out the below form with you feedback and comments.
+        We are constantly looking to improve our products and services and ask for your help in doing so
+      </p>
+      <div class="form-contact">
+        <input type="text" placeholder="Subject">
+        <div class="form-flex">
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+        </div>
+        <input type="text" placeholder="Email"></p>
+        <textarea rows="4" cols="50" placeholder="Your message"></textarea>
+        <button>SUBMIT <img src="assets/img/icon/submit-icon.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+  <div class="footerPage">
+    <div class="container">
+      <div class="flex-footer-1">
+        <div class="info-footer">
+          <img src="assets/img/logo-footer.svg">
+          <p>8746 Sandrine Groves</p>
+          <p>+84-639-129-3982</p>
+          <p>support@flowidra.com</p>
+        </div>
+        <div class="flex-footer-2">
+          <div class="padding-flex-footer-2">
+            <p class="un-opacity">SITE CONTENTS</p>
+            <p>About Us</p>
+            <p>Our Services</p>
+            <p>News</p>
+          </div>
+          <div>
+            <p class="un-opacity">FOLLOW US</p>
+            <p><img src="assets/img/logo_footer/twitter-icon.svg"> Twitter</p>
+            <p><img src="assets/img/logo_footer/facebook-icon.svg"> Facebook</p>
+            <p><img src="assets/img/logo_footer/google-plus.svg"> Google +</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="flex-footer-3">
+        <p>© 2017 Flow-IDRA. All Rights Reserved</p>
+        <p>PRIVACY POLICY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TERMS OF SERVICE</p>
+    </div>
+    </div>
+  </div>
+  <script>
+    function myMap() {
+      var mapProp= {
+          center:new google.maps.LatLng(16.458740, 107.591851),
+          zoom:16,
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script>
+</body>
+</html>

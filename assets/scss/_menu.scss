@@ -1,0 +1,109 @@
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: all .5s ease-in-out;
+  .top-bar {
+    padding-top: 23px;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    .left-items {
+      padding: 1em 0 ;
+      justify-content: space-between;
+      display: flex;
+      .logo {
+        img {
+          width: 183px;
+        }
+      }
+      .expand-button {
+        background: none;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        color: #62cdd1;
+        cursor: pointer;
+        display: none;
+        font-size: 14px;
+      }
+    }
+    .menu {
+      display: flex;
+      height: fit-content;
+      margin: auto 0;
+      a {
+        opacity: 0.7;
+        color: #ffffff;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-bottom: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        // transition: all 0.6s;
+        &:hover {
+          border-bottom: 1px solid #ffffff;
+        }
+        &.active {
+          background: rgba(204, 240, 244, 0.35);
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .right-items {
+      padding-top: 23px;
+      display: flex;
+      img {
+        opacity: 0.7;
+        padding-right: 30px;
+        height: 16px;
+      }
+    }
+  }
+  @include breakpoint($bs-xx){
+    .top-bar {
+      .left-items {
+        .logo {
+          img {
+            width: 100px;
+          }
+        }
+      }
+      .menu {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    padding-bottom: .5em;
+    background: transparent;
+    .top-bar {
+      flex-direction: column;
+      .left-items {
+        .expand-button {
+          display: unset;
+        }
+      }
+      .menu {
+        flex-direction: column;
+        display: none;
+        text-align: center;
+      }
+    }
+    &.is-expand {
+      background: #55b9cd;
+      .top-bar {
+        .menu {
+          display: flex;
+        }
+      }
+    }
+  }
+}

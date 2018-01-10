@@ -1,0 +1,40 @@
+/* vietnamese */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Asap SemiBold'), local('Asap-SemiBold'), url(https://fonts.gstatic.com/s/asap/v7/6dP_LpyUoS1byefjN_PQf_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Asap SemiBold'), local('Asap-SemiBold'), url(https://fonts.gstatic.com/s/asap/v7/yyevO1wQ9o41rAUW1J4NK_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Asap SemiBold'), local('Asap-SemiBold'), url(https://fonts.gstatic.com/s/asap/v7/W3fu5nIoa9HKKY8YYpCXbQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/WB2LNay3rHMH1zU8UJnUHBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/ElUAY9q6T0Ayx4zWzW63VFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

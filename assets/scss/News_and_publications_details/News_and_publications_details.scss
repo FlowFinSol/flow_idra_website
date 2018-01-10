@@ -1,0 +1,25 @@
+.news-and-publications-details {
+  height: 1700px;
+  .content {
+    padding-bottom: 70px;
+    h5 {
+    font-size: 22px;
+    color: #212121;
+    }
+    .time {
+      font-size: 14px;
+      font-weight: 500;
+      color: #b3b3b3;
+    }
+    img {
+      width: 600px;
+      height: 340px;
+      padding: 40px 0;
+    }
+    p {
+      line-height: 28px;
+      color: #3f3f3f;
+      padding-bottom: 10px;
+    }
+  }
+}

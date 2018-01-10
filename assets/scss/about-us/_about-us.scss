@@ -1,0 +1,39 @@
+.about-us-menu {
+  height: 400px;
+  background-image: linear-gradient(rgba(5, 14, 22, 0.7), rgba(5, 14, 22, 0.7)), url(../img/bg-aboutus.jpg);
+  background-size: cover;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 100px;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    transform: skewY(0.6deg);
+  }
+}
+.about-us {
+  height: 890px;
+  h5 {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #3f3f3f;
+    border-left: 4px solid #3f3f3f;
+    padding: 10px 19px;
+  }
+  .head-about-us {
+    img {
+      height: 280px;
+    }
+  }
+  .info-about-us {
+    padding-top: 35px;
+    p {
+      color: #3f3f3f;
+      line-height: 28px;
+    }
+  }
+}

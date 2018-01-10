@@ -1,0 +1,66 @@
+.contact-menu {
+  height: 400px;
+  background-image: linear-gradient(rgba(5, 14, 22, 0.7), rgba(5, 14, 22, 0.7)), url(../img/bg-contact@2x.jpg);
+  background-size: cover;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 100px;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    transform: skewY(0.6deg);
+  }
+}
+.contact {
+  height: 1530px;
+  h4 {
+    color: #212121;
+    border-left: 4px solid #0068c5;
+    padding-left: 19px;
+    margin-bottom: 45px;
+  }
+  p {
+    color: #3f3f3f;
+    line-height: 28px;
+  }
+  .form-contact {
+    padding-top: 30px;
+    input, textarea {
+      margin-bottom: 40px;
+    }
+    button {
+      padding: 15px 30px;
+      margin-top: 40px;
+      font-size: 18px;
+      img {
+        margin-top: -5px;
+        padding-left: 10px;
+        width: 28px;
+      }
+    }
+    .form-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      input {
+        width: 45%;
+      }
+    }
+  }
+  .head-contact {
+    padding-bottom: 85px;
+    p {
+      padding-left: 30px;
+      padding-bottom: 30px;
+    }
+    img {
+      margin-left: -10px;
+      height: 40px;
+      padding-right: 30px;
+    }
+  }
+}

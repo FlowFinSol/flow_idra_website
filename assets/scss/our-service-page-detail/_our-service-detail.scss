@@ -1,0 +1,109 @@
+.our-services-menu {
+  height: 400px;
+  // background: blue;
+  background-image: linear-gradient(rgba(5, 14, 22, 0.7), rgba(5, 14, 22, 0.7)), url(../img/bg-ourservices@2x.jpg);
+  background-size: cover;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 100px;
+    bottom: -90px;
+    left: 0;
+    right: 0;
+    transform: skewY(0.6deg);
+  }
+}
+.our-service-detail {
+  height: 2460px;
+  p {
+    color: #3f3f3f;
+    line-height: 28px;
+  }
+  .research-services {
+    .quantitative {
+      margin-top: 24px;
+      height: 480px;
+      background-image: url("../img/bg-researchservices@2x.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #0068c5;
+        padding-left: 60px;
+        padding-top: 60px;
+      }
+      li {
+        padding-left: 70px;
+      }
+      button {
+        margin-top: 40px;
+        margin-left: 60px;
+      }
+      .quantitative-left {
+        height: 360px;
+        width: 488px;
+        background: white;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 45px;
+      }
+      .quantitative-right {
+        height: 360px;
+        width: 488px;
+        background: white;
+        margin-left: 20px;
+      }
+    }
+  }
+  .research-solutions {
+    padding-top: 70px;
+    h4 {
+      margin-bottom: 0;
+    }
+    p {
+      padding: 40px 0 20px 30px;
+      // padding-top: 40px;
+      // padding-bottom: 20px;
+      color: #212121;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    li {
+      padding: 0 0 10px 40px;
+    }
+  }
+  .market-sectors {
+    padding-top: 100px;
+    vertical-align: middle;
+    h4 {
+      margin-bottom: 45px;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border: solid 1px #898989;
+      padding: 11px 26px;
+      height: 80px;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      &:hover {
+        color: white;
+        border: solid 1px #0068c5;
+        background: #0068c5;
+      }
+    }
+  }
+
+}
