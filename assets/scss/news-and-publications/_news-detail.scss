@@ -61,25 +61,22 @@
     }
   }
 }
-.pagination1 {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
+.pagination {
   justify-content: center;
-  align-items: center;
-  img {
-    background: #0068c5;
-    height: 30px;
-    padding: 8px 6px;
-    border: 1px solid #0068c5;
-    margin: -7px 40px 0 10px;
-  }
-  p {
-    font-size: 18px;
+  li {
+    font-size: 20px;
     padding-right: 30px;
   }
-  .active-p {
-    font-size: 22px;
-    color: #0068c5;
+  img {
+    background: #0068c5;
+    height: 35px;
+    padding: 8px 6px;
+    margin: -2px 50px 0 30px;
+  }
+  .active {
+    a {
+      font-size: 22px;
+      font-weight: bold;
+    }
   }
 }

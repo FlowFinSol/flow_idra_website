@@ -46,6 +46,14 @@ body {
     font-weight: bold;
     letter-spacing: 0.3px;
   }
+  h6 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #212121;
+    padding-bottom: 30px;
+  }
   p {
     font-family: 'Merriweather', serif;
     font-size: 16px;
@@ -60,12 +68,18 @@ body {
     border: 1px solid #0068c5;
     background: none;
     font-family: 'Montserrat', sans-serif;
+    a {
+      color: #0068c5;
+    }
+    &:hover {
+      background: #0068c5;
+      a {
+        color: white;
+      }
+    }
   }
   hr {
-    // height: 2px;
     opacity: 0.7;
-    // background: #eeeeee;
-    // border: none!important;
   }
   input, textarea {
     font-family: 'Merriweather', serif;
@@ -76,10 +90,7 @@ body {
     width: 100%;
     border-bottom: 1px solid #e6e6e6;
     &:focus {
-      border: 1px solid blue !important;
-    }
-    &:active {
-      border: 1px solid #0068c5!important;
+      outline: none;
     }
   }
   li {
@@ -113,16 +124,14 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   box-shadow: 0 9px 45px 0 rgba(0, 0, 0, 0.07);
   h3 {
+    margin: 0!important;
     padding-left: 40px;
   }
   .menu-title {
-    padding-right: 10px;
-    // .active-menu-title {
-    //
-    // }
+    padding-right: 25px;
     a {
       font-size: 15px;
       color: #b3b3b3;
@@ -137,13 +146,13 @@ body {
   }
 }
 .border {
-  border: solid 1px #c3c3c3;
+  border: solid 1px #c3c3c3!important;
   &:hover {
-    border: solid 1px #0068c5;
+    border: solid 1px #0068c5!important;
     background: #0068c5;
   }
 }
-.p-our-service {
+@mixin p-our-service {
   color: #3f3f3f;
   line-height: 30px;
   display: flex;
@@ -166,7 +175,6 @@ body {
   text-align: center;
   bottom: 1.5em;
   right: 1.5em;
-  // box-shadow: 0 0 12px 2px rgba(128,128,128,0.2);
   background: #0068c5;
   cursor: pointer;
   z-index: 1;
@@ -174,12 +182,4 @@ body {
     width: 18px;
     margin-top: 18px;
   }
-  // @include breakpoint($bs-xx){
-  //   width: 2em;
-  //   height: 2em;
-  //   img {
-  //     width: 14px;
-  //     margin-top: 7px;
-  //   }
-  // }
 }

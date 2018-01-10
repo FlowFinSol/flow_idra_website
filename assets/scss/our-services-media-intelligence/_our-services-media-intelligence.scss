@@ -45,27 +45,8 @@
     padding-bottom: 60px;
     .list-editorial-content-monitoring {
       padding-top: 35px;
-      .border {
-        border: solid 1px #c3c3c3;
-        &:hover {
-          border: solid 1px #0068c5;
-          background: #0068c5;
-        }
-      }
       p {
-        color: #3f3f3f;
-        line-height: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 11px;
-        height: 100%;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        &:hover {
-          color: white;
-        }
+        @include p-our-service;
       }
     }
   }
@@ -74,12 +55,18 @@
     .list-audience-ratings {
       padding-top: 30px;
       padding-bottom: 40px;
+      p {
+        @include p-our-service;
+      }
     }
   }
   .customised-monitoring-analysis {
     .list-customised-monitoring-analysis {
       padding-top: 30px;
       padding-bottom: 40px;
+      p {
+        @include p-our-service;
+      }
     }
   }
 }
