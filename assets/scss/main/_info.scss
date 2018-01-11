@@ -1,5 +1,4 @@
 .introduc{
-  height: 1000px;
   background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-head.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +16,7 @@
     transform: skewY(0.6deg);
   }
   .info {
-    padding-top: 340px;
+    padding-top: 360px;
     text-align: center;
     .header {
       padding: 0 120px;
@@ -32,7 +31,8 @@
     }
     .read-more {
       opacity: 0.7;
-      padding-top: 241px;
+      padding-top: 290px;
+      padding-bottom: 60px;
       p {
         font-weight: 400;
         font-family: 'Montserrat', sans-serif;
@@ -43,5 +43,16 @@
         height: 20px;
       }
     }
+  }
+  @include breakpoint($bs-lg){
+    .info {
+      .header {
+        padding: 0 40px;
+      }
+      .footer {
+        padding: 30px 20px 0;
+      }
+    }
+
   }
 }

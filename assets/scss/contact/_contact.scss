@@ -47,6 +47,11 @@
         border: none;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
+        cursor: pointer;
+        appearance: none;
+        &:hover {
+          opacity: 0.9;
+        }
       }
       textarea {
         color: #3f3f3f;
@@ -77,6 +82,18 @@
       margin-left: -10px;
       height: 40px;
       padding-right: 30px;
+    }
+    .address {
+      padding: 10px 0;
+      .company-name {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @include breakpoint($bs-lg) {
+    .contact-form {
+      margin: 0;
     }
   }
 }
