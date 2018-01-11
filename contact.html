@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Flow App</title>
+  <title>Flow Idra</title>
   <!-- <link rel="shortcut icon" href="assets/img/icon/favicon.ico" type="image/x-icon"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
@@ -44,33 +44,55 @@
       </div>
       <div class="head-contact">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-md-12">
             <p>Get in contact with us to find out more about how our solutions can help your business.</p>
-            <div id="googleMap" style="width:100%;height:386px; margin: 40px 0;"></div>
-            <p>63 Bartoletti Circle Apt. 433 Port Antoniamouth</p>
-            <p>support@flowidra.com</p>
-            <p>667-893-8151</p>
-            <p>
-              <img src="assets/img/icon/fb-blue-icon.svg">
-              <img src="assets/img/icon/twitter-blue-icon.svg">
-              <img src="assets/img/icon/googleplus-blue-icon.svg">
-            </p>
+            <div class="address">
+              <p class="company-name">FLOW FINANCIAL SOLUTIONS CO., LTD</p>
+              <p>16192 Coastal Hwy, Lewes DE 19958, U.S.</p>
+            </div>
+            <div class="address">
+              <p class="company-name">IDRA COMPANY</p>
+              <p>Tirane Tirane TIRANE Njesia Bashkiake Nr.8, Rruga "Siri Kodra", Ndertesa 94,
+                Apartamenti 49, Kodi Postar Nr.1017, Albania
+              </p>
+            </div>
+            <div class="address">
+              <p class="company-name">FLOW - IDRA CO., LTD</p>
+              <p>HCC Building, 28 Ly Thuong Kiet, Vinh Ninh Ward, Hue City, Thua Thien Hue Province, Vietnam</p>
+            </div>
           </div>
-          <div class="col-6">
-            <form action="" class="form-contact">
-              <input name="firstName" type="text" placeholder="First name *" />
-              <input name="lastName" type="text" placeholder="Last name *" />
-              <input name="company" type="text" placeholder="Company *" />
-              <input name="email" type="text" placeholder="Email *" />
-              <input name="country" type="text" placeholder="Country *" />
-              <select name="interest" placeholder="Select interest" >
-                <option value="" disabled selected>Select interest</option>
-                <option value="volvo">Market Research</option>
-                <option value="saab">Media Intelligence</option>
-                <option value="mercedes">Software Development</option>
-              </select>
-              <textarea name="message" type="text" placeholder="Message"></textarea>
-              <button>submit</button>
+          <div class="col-lg-6 con-md-12">
+            <form id="contact_form" class="contact-form">
+              <div class="field">
+                <input id="form_firstName" name="firstName" type="text" placeholder="First name *" required/>
+              </div>
+              <div class="field">
+                <input id="form_lastName" name="lastName" type="text" placeholder="Last name *" required/>
+              </div>
+              <div class="field">
+                <input id="form_company" name="company" type="text" placeholder="Company *" required/>
+              </div>
+              <div class="field">
+                <input id="form_email" name="email" type="email" placeholder="Email *" required/>
+              </div>
+              <div class="field">
+                <input id="form_country" name="country" type="text" placeholder="Country *" required/>
+              </div>
+              <div class="field">
+                <select id="form_interest" name="interest" placeholder="Select interest" required>
+                  <option value disabled selected>Select interest</option>
+                  <option value="Market Research">Market Research</option>
+                  <option value="Media Intelligence">Media Intelligence</option>
+                  <option value="Software Development">Software Development</option>
+                </select>
+                <span id="form_error_interest"></span>
+              </div>
+              <div class="field">
+                <textarea id="form_message" name="message" type="text" placeholder="Message *" required></textarea>
+                <span id="form_error_message"></span>
+              </div>
+              <p id="form_notification" class="notification"></p>
+              <button id="form_button">submit</button>
             </form>
           </div>
         </div>
@@ -82,34 +104,14 @@
       <div class="flex-footer-1">
         <div class="info-footer">
           <img src="assets/img/logo_footer/logo-footer.svg">
-          <p>8746 Sandrine Groves</p>
-          <p>+84-639-129-3982</p>
-          <p>support@flowidra.com</p>
         </div>
         <div class="flex-footer-2">
           <div class="padding-flex-footer-2">
             <p class="un-opacity">SITE CONTENTS</p>
             <div class="site-contents">
-              <p>About Us</p>
-              <p>Our Services</p>
-              <p>News</p>
-            </div>
-          </div>
-          <div>
-            <p class="un-opacity">FOLLOW US</p>
-            <div class="follow-us">
-              <div class="follow-us-content">
-                <img src="assets/img/icon/twitter-blue-icon.svg">
-                <p>Twitter</p>
-              </div>
-              <div class="follow-us-content">
-                <img src="assets/img/icon/fb-blue-icon.svg">
-                <p>Facebook</p>
-              </div>
-              <div class="follow-us-content">
-                <img style="margin-left:2px;" src="assets/img/icon/googleplus-blue-icon.svg">
-                <p>Google +</p>
-              </div>
+              <a href="about-us.html">About Us</a>
+              <a href="our-services.html">Our Services</a>
+              <a href="news-and-publications.html">News</a>
             </div>
           </div>
         </div>
@@ -118,8 +120,12 @@
     <hr />
     <div class="container">
       <div class="flex-footer-3">
-        <p>© 2017 Flow-IDRA. All Rights Reserved</p>
-        <p>PRIVACY POLICY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TERMS OF SERVICE</p>
+        <p>© 2017 FLOW - IDRA CO., LTD. All Rights Reserved</p>
+        <div class="footer-link">
+          <a target="_blank" href="https://app.paywithflow.com/api/v1/flow_app/privacy">PRIVACY POLICY</a>
+          <span>|</span>
+          <a target="_blank" href="https://app.paywithflow.com/api/v1/flow_app/tos">TERMS OF SERVICE</a>
+        </div>
     </div>
     </div>
   </div>
@@ -135,11 +141,11 @@
       var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script>
   <script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
   <script src="assets/js/vendors/popper.min.js"></script>
   <script src="assets/js/vendors/bootstrap.min.js"></script>
   <script src="assets/js/vendors/contact_page.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script> -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script> -->
 </body>
 </html>
