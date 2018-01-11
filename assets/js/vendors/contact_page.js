@@ -1,58 +1,31 @@
-'use strict'
-AOS.init();
-
-// Expand menu
-var isTopBarExpand = false
-$('.top-bar .expand-button').click(function() {
-  if (!isTopBarExpand) {
-    isTopBarExpand = true;
-    $('#top-bar').addClass('is-expand');
-  }
-  else {
-    isTopBarExpand = false;
-    $('#top-bar').removeClass('is-expand');
-  }
-})
-
-$(window).scroll(function(){
-  var wScroll = $(this).scrollTop()
-  var hWindow = $(window).height()
-
-  // Paralax Background
-  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    $('.head-background').css({'background-position': 'center '+ (-wScroll /3) + 'px'})
-  }
-})
-
-
-function renderMap() {
-  var mapProp = {
-    center:new google.maps.LatLng(16.458753, 107.591764),
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(16.458740, 107.591851),
     zoom: 15,
     styles: [
       {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [
-              {
-                  "color": "#e9e9e9"
-              },
-              {
-                  "lightness": 17
-              }
-          ]
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
       },
       {
-          "featureType": "landscape",
-          "elementType": "geometry",
-          "stylers": [
-              {
-                  "color": "#f5f5f5"
-              },
-              {
-                  "lightness": 20
-              }
-          ]
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
       },
       {
           "featureType": "road.highway",
@@ -208,3 +181,35 @@ function renderMap() {
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop()
+  var hWindow = $(window).height()
+
+  // Back to top show
+  if (wScroll > $(window).height()) {
+    $(".back-to-top").fadeIn();
+  }
+  else {
+    $(".back-to-top").fadeOut();
+  }
+
+})
+
+// Expand menu
+var isTopBarExpand = false
+$('.top-bar .expand-button').click(function() {
+  if (!isTopBarExpand) {
+    isTopBarExpand = true;
+    $('#top-bar').addClass('is-expand');
+  }
+  else {
+    isTopBarExpand = false;
+    $('#top-bar').removeClass('is-expand');
+  }
+})
+
+// Back to Top
+$(".back-to-top").click(function () {
+   $("html, body").animate({scrollTop: 0}, 1100);
+});

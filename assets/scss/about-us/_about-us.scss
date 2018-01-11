@@ -1,6 +1,6 @@
 .about-us-menu {
   height: 400px;
-  background-image: linear-gradient(rgba(5, 14, 22, 0.7), rgba(5, 14, 22, 0.7)), url(../img/bg-aboutus.jpg);
+  background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-aboutus.jpg);
   background-size: cover;
   position: relative;
   &::after {
@@ -16,7 +16,7 @@
   }
 }
 .about-us {
-  height: 890px;
+  height: 850px;
   h5 {
     margin-top: 20px;
     margin-left: 15px;

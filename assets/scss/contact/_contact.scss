@@ -1,6 +1,6 @@
 .contact-menu {
   height: 400px;
-  background-image: linear-gradient(rgba(5, 14, 22, 0.7), rgba(5, 14, 22, 0.7)), url(../img/bg-contact@2x.jpg);
+  background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-contact@2x.jpg);
   background-size: cover;
   position: relative;
   &::after {
@@ -16,40 +16,56 @@
   }
 }
 .contact {
-  height: 1530px;
   p {
     color: #3f3f3f;
   }
   .form-contact {
-    padding-top: 30px;
-    input, textarea {
-      margin-bottom: 40px;
+    background-color: #015185;
+    padding: 35px;
+    margin: 0 35px;
+    input {
+      height: 40px;
+      padding: 0 15px;
+      background-color: white;
+      margin-bottom: 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+    }
+    select {
+      width: 100%;
+      height: 40px;
+      padding: 0 15px;
+      background-color: white;
+      margin-bottom: 15px;
+      outline: none;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+    }
+    textarea {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      min-height: 100px;
+      padding: 7px 15px;
+      background-color: white;
+      margin-bottom: 15px;
     }
     button {
-      padding: 15px 30px;
-      margin-top: 40px;
-      font-size: 18px;
-      img {
-        margin-top: -5px;
-        padding-left: 10px;
-        width: 28px;
-      }
-    }
-    .form-flex {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      input {
-        width: 45%;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      border: 1px solid white;
+      color: white;
+      padding: 11px 30px;
+      text-transform: uppercase;
+      outline: none;
+      &:hover {
+        background-color: white;
+        color: #015185;
       }
     }
   }
   .head-contact {
     padding-bottom: 85px;
-    p {
-      padding-left: 30px;
-      padding-bottom: 30px;
-    }
     img {
       margin-left: -10px;
       height: 40px;
