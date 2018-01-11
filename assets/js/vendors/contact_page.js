@@ -236,7 +236,7 @@ $('#contact_form').submit(function(event) {
 
   $.ajax({
     type: "POST",
-    url: "https://paywithflow.pw/paywithflow-website/send-contact",
+    url: "https://app.paywithflow.com/paywithflow-website/send-contact",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     data: JSON.stringify(formdata),
