@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Flow App</title>
   <!-- <link rel="shortcut icon" href="assets/img/icon/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" type="text/css" href="assets/css/font.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
 </head>
@@ -43,12 +42,11 @@
       <div class="title-page">
         <h3><img src="assets/img/icon/h1.svg"> CONTACT</h3>
       </div>
-      <h4>Headquarter Contacts</h4>
       <div class="head-contact">
         <div class="row">
-          <div class="col-6"><div id="googleMap" style="width:100%;height:386px;"></div></div>
           <div class="col-6">
-            <p>Drop us a line to discuss how we can solve your communication challenges.</p>
+            <p>Get in contact with us to find out more about how our solutions can help your business.</p>
+            <div id="googleMap" style="width:100%;height:386px; margin: 40px 0;"></div>
             <p>63 Bartoletti Circle Apt. 433 Port Antoniamouth</p>
             <p>support@flowidra.com</p>
             <p>667-893-8151</p>
@@ -58,22 +56,24 @@
               <img src="assets/img/icon/googleplus-blue-icon.svg">
             </p>
           </div>
+          <div class="col-6">
+            <form action="" class="form-contact">
+              <input name="firstName" type="text" placeholder="First name *" />
+              <input name="lastName" type="text" placeholder="Last name *" />
+              <input name="company" type="text" placeholder="Company *" />
+              <input name="email" type="text" placeholder="Email *" />
+              <input name="country" type="text" placeholder="Country *" />
+              <select name="interest" placeholder="Select interest" >
+                <option value="" disabled selected>Select interest</option>
+                <option value="volvo">Market Research</option>
+                <option value="saab">Media Intelligence</option>
+                <option value="mercedes">Software Development</option>
+              </select>
+              <textarea name="message" type="text" placeholder="Message"></textarea>
+              <button>submit</button>
+            </form>
+          </div>
         </div>
-      </div>
-      <h4>FEEDBACK & COMMENTS</h4>
-      <p>If you have a question or would like to help us improve our services to you and others,
-        please fill out the below form with you feedback and comments.
-        We are constantly looking to improve our products and services and ask for your help in doing so
-      </p>
-      <div class="form-contact">
-        <input type="text" placeholder="Subject">
-        <div class="form-flex">
-          <input type="text" placeholder="First name">
-          <input type="text" placeholder="Last name">
-        </div>
-        <input type="text" placeholder="Email"></p>
-        <textarea rows="4" cols="50" placeholder="Your message"></textarea>
-        <button>SUBMIT <img src="assets/img/icon/submit-icon.svg" alt=""></button>
       </div>
     </div>
   </div>
@@ -116,8 +116,7 @@
   <script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
   <script src="assets/js/vendors/popper.min.js"></script>
   <script src="assets/js/vendors/bootstrap.min.js"></script>
-  <script src="assets/js/vendors/skrollr.min.js"></script>
-  <script src="assets/js/vendors/particles.min.js"></script>
-  <script src="assets/js/vendors/main.js"></script>
+  <script src="assets/js/vendors/contact_page.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script>
 </body>
 </html>
