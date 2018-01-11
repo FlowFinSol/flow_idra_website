@@ -67,13 +67,6 @@ nav {
   }
   @include breakpoint($bs-xx){
     .top-bar {
-      .left-items {
-        .logo {
-          img {
-            width: 100px;
-          }
-        }
-      }
       .menu {
         a {
           font-size: 14px;
@@ -81,7 +74,7 @@ nav {
       }
     }
   }
-  @include breakpoint($bs-md){
+  @include breakpoint($bs-lg){
     padding-bottom: .5em;
     background: transparent;
     .top-bar {
@@ -96,12 +89,29 @@ nav {
         display: none;
         text-align: center;
       }
+      .right-items {
+        flex-direction: column;
+        display: none;
+        text-align: center;
+        padding-top: 0;
+        img {
+          margin-bottom: 12px;
+          padding-right: 0;
+        }
+        p {
+          display: none;
+        }
+      }
     }
     &.is-expand {
       background: #55b9cd;
       .top-bar {
         .menu {
           display: flex;
+        }
+        .right-items {
+          display: flex;
+
         }
       }
     }
