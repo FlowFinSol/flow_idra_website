@@ -1,16 +1,33 @@
 .our-clients {
-  height: 920px;
-  h3 {
-    padding-top: 120px;
+  height: 623px;
+  background: #fafafa;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 100px;
+    top: -70px;
+    left: 0;
+    right: 0;
+    transform: skewY(0.6deg);
   }
-  hr {
-    margin-bottom: 90px;
-  }
-  .img-center {
-    text-align: center;
-    img {
-      height: 99px;
+  .our-clients-content {
+    h3 {
+      padding-top: 120px;
+    }
+    hr {
       margin-bottom: 90px;
+    }
+    .img-center {
+      text-align: center;
+      img {
+        padding-right: 30px;
+        padding-left: 40px;
+        height: 60px;
+        margin-bottom: 90px;
+      }
     }
   }
 }

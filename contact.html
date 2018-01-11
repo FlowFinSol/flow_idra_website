@@ -98,7 +98,7 @@
     <div class="container">
       <div class="flex-footer-1">
         <div class="info-footer">
-          <img src="assets/img/logo-footer.svg">
+          <img src="assets/img/logo_footer/logo-footer.svg">
           <p>8746 Sandrine Groves</p>
           <p>+84-639-129-3982</p>
           <p>support@flowidra.com</p>
@@ -106,15 +106,28 @@
         <div class="flex-footer-2">
           <div class="padding-flex-footer-2">
             <p class="un-opacity">SITE CONTENTS</p>
-            <p>About Us</p>
-            <p>Our Services</p>
-            <p>News</p>
+            <div class="site-contents">
+              <p>About Us</p>
+              <p>Our Services</p>
+              <p>News</p>
+            </div>
           </div>
           <div>
             <p class="un-opacity">FOLLOW US</p>
-            <p><img src="assets/img/logo_footer/twitter-icon.svg"> Twitter</p>
-            <p><img src="assets/img/logo_footer/facebook-icon.svg"> Facebook</p>
-            <p><img src="assets/img/logo_footer/google-plus.svg"> Google +</p>
+            <div class="follow-us">
+              <div class="follow-us-content">
+                <img src="assets/img/icon/twitter-blue-icon.svg">
+                <p>Twitter</p>
+              </div>
+              <div class="follow-us-content">
+                <img src="assets/img/icon/fb-blue-icon.svg">
+                <p>Facebook</p>
+              </div>
+              <div class="follow-us-content">
+                <img style="margin-left:2px;" src="assets/img/icon/googleplus-blue-icon.svg">
+                <p>Google +</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -130,6 +143,16 @@
   <div class="back-to-top">
     <img src="assets/img/arrow-up.svg">
   </div>
+  <script>
+    function myMap() {
+      var mapProp= {
+          center:new google.maps.LatLng(16.458740, 107.591851),
+          zoom:16,
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYf813r0OYHCM8NgJka9Ta8dC6R2k-gM&callback=myMap"></script>
   <script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
   <script src="assets/js/vendors/popper.min.js"></script>
   <script src="assets/js/vendors/bootstrap.min.js"></script>
