@@ -209,6 +209,57 @@ $('.top-bar .expand-button').click(function() {
   }
 })
 
+// Contact Form
+$('#contact_form').submit(function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  const firstName = $("#form_firstName").val()
+  const lastName = $("#form_lastName").val()
+  const company = $("#form_company").val()
+  const email = $("#form_email").val()
+  const country = $("#form_country").val()
+  const interest = $("#form_interest").val()
+  const message = $("#form_message").val()
+
+  const formdata = {
+    first_name: firstName,
+    last_name: lastName,
+    company,
+    email,
+    country,
+    interest,
+    message
+  }
+
+  $('#form_button').text('submitting...')
+
+  $.ajax({
+    type: "POST",
+    url: "https://paywithflow.pw/paywithflow-website/send-contact",
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    data: JSON.stringify(formdata),
+    success: function() {
+      $('#contact_form').each(function(){
+        this.reset()
+      })
+      $('#form_button').text('submit')
+      $('#form_notification').text('Your message has been sent!')
+      setTimeout(function(){
+        $('#form_notofication').hide()
+      }, 4000);
+    },
+    error: function(error) {
+      $('#form_button').text('submit')
+      $('#form_notification').text('Something went wrong!')
+      setTimeout(function(){
+        $('#form_notofication').hide()
+      }, 4000);
+    },
+  })
+})
+
 // Back to Top
 $(".back-to-top").click(function () {
    $("html, body").animate({scrollTop: 0}, 1100);
