@@ -17,7 +17,7 @@
   }
   .flex-footer-1 {
     @include flex-footer;
-    padding-top: 40px;
+    padding: 40px 0 20px;
     .info-footer {
       span {
         font-size: 35px;
@@ -82,6 +82,29 @@
       }
       span {
         margin: 0 10px;
+      }
+    }
+  }
+
+  @include breakpoint($bs-md) {
+    .flex-footer-1 {
+      flex-direction: column;
+      .info-footer{
+        margin-bottom: 20px;
+      }
+    }
+    .flex-footer-3 {
+      flex-direction: column;
+      padding-bottom: 30px;
+      .footer-link {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin: 5px 0;
+        }
+        span {
+          display: none;
+        }
       }
     }
   }
