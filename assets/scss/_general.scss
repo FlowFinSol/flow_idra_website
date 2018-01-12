@@ -117,6 +117,7 @@ body {
 .p-montserrat {
   font-family: 'Montserrat';
 }
+
 .title-page {
   z-index: 1;
   position: absolute;
@@ -157,7 +158,29 @@ body {
       }
     }
   }
+  @include breakpoint($bs-md) {
+    top: 40%;
+    .top-menu {
+      background: none;
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+      .left {
+        margin: 0;
+        span {
+          display: none;
+        }
+        h3 {
+          text-align: center;
+          padding-left: 0;
+          color: white;
+        }
+      }
+    }
+  }
 }
+
+
 .border {
   border: solid 1px #c3c3c3!important;
   &:hover {
