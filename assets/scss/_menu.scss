@@ -14,20 +14,18 @@ nav {
       padding: 1em 0 ;
       justify-content: space-between;
       display: flex;
-      .logo {
-        img {
-          width: 183px;
-        }
+      .fi-colored-logo-icon {
+        font-size: 35px;
       }
       .expand-button {
         background: none;
-        border-radius: 3px;
         outline: none;
         border: none;
-        color: #62cdd1;
+        color: white;
         cursor: pointer;
         display: none;
         font-size: 14px;
+        font-size: 16px;
       }
     }
     .menu {
@@ -58,19 +56,12 @@ nav {
     .right-items {
       padding-top: 23px;
       display: flex;
-      img {
+      span {
         opacity: 0.7;
         padding-right: 30px;
-        height: 16px;
       }
-    }
-  }
-  @include breakpoint($bs-xx){
-    .top-bar {
-      .menu {
-        a {
-          font-size: 14px;
-        }
+      @include breakpoint($bs-lg){
+        display: none;
       }
     }
   }
@@ -89,29 +80,12 @@ nav {
         display: none;
         text-align: center;
       }
-      .right-items {
-        flex-direction: column;
-        display: none;
-        text-align: center;
-        padding-top: 0;
-        img {
-          margin-bottom: 12px;
-          padding-right: 0;
-        }
-        p {
-          display: none;
-        }
-      }
     }
     &.is-expand {
       background: #55b9cd;
       .top-bar {
         .menu {
           display: flex;
-        }
-        .right-items {
-          display: flex;
-
         }
       }
     }
