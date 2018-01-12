@@ -30,11 +30,45 @@
     .content-our-services {
       padding-left: 0px;
       .services-list {
+        padding-top: 70px;
         p {
           padding-right: 10px;
         }
         img {
           height: 120px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .content-our-services {
+      .services-list {
+        padding-top: 60px;
+        p {
+          padding-right: 5px;
+        }
+        img {
+          height: 100px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+    .content-our-services {
+      // display: flex;
+      // // justify-content: center;
+      // align-items: center;
+      // text-align: center;
+      .services-list {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+        text-align: center;
+        p {
+          display: none;
+        }
+        img {
+          height: 140px;
         }
       }
     }

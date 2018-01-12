@@ -146,6 +146,14 @@ body {
       }
     }
   }
+  @include breakpoint($bs-xl){
+    .menu-title {
+      a {
+        font-size: 14px;
+        padding-right: 6px;
+      }
+    }
+  }
 }
 .border {
   border: solid 1px #c3c3c3!important;

@@ -16,13 +16,15 @@
   }
 }
 .our-service-detail {
-  height: 2460px;
   p {
     color: #3f3f3f;
   }
   .research-services {
+    p {
+      padding-left: 24px;
+    }
     .quantitative {
-      margin-top: 24px;
+      margin-top: 34px;
       height: 480px;
       background-image: url("../img/bg-researchservices@2x.jpg");
       background-size: cover;
@@ -78,7 +80,8 @@
     }
   }
   .market-sectors {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     vertical-align: middle;
     h4 {
       margin-bottom: 45px;
@@ -102,5 +105,14 @@
       }
     }
   }
-
+  @include breakpoint($bs-xl){
+    .research-services {
+      .quantitative {
+        .quantitative-left,
+        .quantitative-right {
+          width: 400px;
+        }
+      }
+    }
+  }
 }
