@@ -1,0 +1,20 @@
+.btn-secondary {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  color: #212121;
+  &:hover {
+    color: #212121;
+    background-color: transparent;
+  }
+}
+
+.btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+  background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  box-shadow: none;
+}
