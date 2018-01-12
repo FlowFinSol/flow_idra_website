@@ -156,11 +156,33 @@ body {
       }
     }
   }
-  @include breakpoint($bs-md) {
-    top: 40%;
+  @include breakpoint($bs-xl){
     .top-menu {
-      background: none;
-      box-shadow: none;
+      .menu-title {
+        padding-right: 5px;
+        a {
+          font-size: 14px;
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-lg){
+    .top-menu {
+      .menu-title {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        a {
+          padding-right: 5px;
+          font-size: 14px;
+          // padding-right: 6px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-md) {
+    .top-menu {
       display: flex;
       justify-content: center;
       .left {
@@ -176,39 +198,36 @@ body {
       }
     }
   }
-  @include breakpoint($bs-xl){
-    .menu-title {
-      a {
-        font-size: 14px;
-        padding-right: 6px;
+}
+
+.grid-box {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  .item {
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    height: 140px;
+    border: 1px solid #898989;
+    &:hover {
+      background: #0068c5;
+      border: 1px solid #0068c5;
+      p {
+        color: white;
       }
+    }
+    p {
+      font-size: 18px;
+      margin: 0;
     }
   }
 }
 
-
-.border {
-  border: solid 1px #c3c3c3!important;
-  &:hover {
-    border: solid 1px #0068c5!important;
-    background: #0068c5;
-  }
-}
-@mixin p-our-service {
-  color: #3f3f3f;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 11px;
-  height: 100%;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  &:hover {
-    color: white;
-  }
-}
 .back-to-top {
   padding: 11px 15px;
   display: none;

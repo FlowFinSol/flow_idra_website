@@ -41,9 +41,9 @@
     padding-bottom: 60px;
     .list-editorial-content-monitoring {
       padding-top: 35px;
-      p {
-        @include p-our-service;
-      }
+        p {
+          padding-left: 0px;
+        }
     }
   }
   .audience-ratings {
@@ -52,7 +52,7 @@
       padding-top: 30px;
       padding-bottom: 40px;
       p {
-        @include p-our-service;
+        padding-left: 0px;
       }
     }
   }
@@ -61,7 +61,7 @@
       padding-top: 30px;
       padding-bottom: 40px;
       p {
-        @include p-our-service;
+        padding-left: 0px;
       }
     }
   }
