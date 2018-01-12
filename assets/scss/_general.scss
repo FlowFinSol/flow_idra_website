@@ -117,32 +117,64 @@ body {
 .p-montserrat {
   font-family: 'Montserrat';
 }
+
 .title-page {
-  position: relative;
-  height: 80px;
-  background: white;
-  margin-top: -35px;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-bottom: 70px;
-  box-shadow: 0 9px 45px 0 rgba(0, 0, 0, 0.07);
-  h3 {
-    margin: 0!important;
-    padding-left: 40px;
-  }
-  .menu-title {
-    padding-right: 25px;
-    a {
-      font-size: 15px;
-      color: #b3b3b3;
-      padding-right: 15px;
-      &:hover {
-        color: #3f3f3f;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  .top-menu {
+    box-shadow: 0 9px 45px 0 rgba(0, 0, 0, 0.07);
+    height: 80px;
+    background: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .left {
+      display: flex;
+      margin-left: 40px;
+      [class^="fi-"] {
+        font-size: 28px;
       }
-      &:active {
-        color: #3f3f3f;
+      h3 {
+        margin: 0!important;
+        padding-left: 20px;
+      }
+    }
+    .menu-title {
+      padding-right: 25px;
+      a {
+        font-size: 15px;
+        color: #b3b3b3;
+        padding-right: 15px;
+        &:hover {
+          color: #3f3f3f;
+        }
+        &:active {
+          color: #3f3f3f;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-md) {
+    top: 40%;
+    .top-menu {
+      background: none;
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+      .left {
+        margin: 0;
+        span {
+          display: none;
+        }
+        h3 {
+          text-align: center;
+          padding-left: 0;
+          color: white;
+        }
       }
     }
   }
@@ -155,6 +187,8 @@ body {
     }
   }
 }
+
+
 .border {
   border: solid 1px #c3c3c3!important;
   &:hover {
@@ -178,8 +212,7 @@ body {
   }
 }
 .back-to-top {
-  width: 44px;
-  height: 44px;
+  padding: 11px 15px;
   display: none;
   position: fixed;
   text-align: center;
@@ -188,8 +221,7 @@ body {
   background: #0068c5;
   cursor: pointer;
   z-index: 1;
-  img {
-    width: 15px;
-    margin-top: 17px;
+  span {
+    color: white;
   }
 }
