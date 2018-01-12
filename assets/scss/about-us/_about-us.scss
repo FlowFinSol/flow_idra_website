@@ -16,7 +16,7 @@
   }
 }
 .about-us {
-  height: 890px;
+  padding-bottom: 190px;
   h5 {
     margin-top: 20px;
     margin-left: 15px;
@@ -27,6 +27,13 @@
   .head-about-us {
     img {
       height: 280px;
+      max-width: 100%;
+      max-height: auto;
+      display: block;
+      margin: 0px;
+      box-shadow: none;
+      border: none;
+      padding: 0px
     }
   }
   .info-about-us {
@@ -35,4 +42,55 @@
       color: #3f3f3f;
     }
   }
+  @include breakpoint($bs-xx){
+    padding-bottom: 80px;
+    .head-about-us {
+      img {
+        height: 280px;
+      }
+    }
+
+  }
+  @include breakpoint($bs-lg){
+    h5{
+      margin-left: 0px;
+      &{
+        margin-top: 50px;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .title-page{
+      height: 0px;
+      h3{
+        display: none;
+      }
+      &::before {
+        width: 100%;
+        content: 'ABOUT US';
+        color: #fff;
+        text-align: center;
+        font-family: 'Montserrat', serif;
+        font-size: 26px;
+        margin-top:-150px;
+        position: absolute;
+        font-weight: 600;
+      }
+    h5{
+      &{
+        margin-top: 28px;
+      }
+    }
+    .head-about-us {
+      img{
+        padding-right: 0px;
+        height: auto;
+        padding-left: 0px;
+      }
+      .info-about-us{
+        padding-top: 20px;
+      }
+    }
+  }
+}
 }

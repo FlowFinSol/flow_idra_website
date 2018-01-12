@@ -131,6 +131,12 @@ body {
     margin: 0!important;
     padding-left: 40px;
   }
+  //add
+  span{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #b3b3b3;
+  }
   .menu-title {
     padding-right: 25px;
     a {
@@ -147,11 +153,14 @@ body {
   }
 }
 .border {
+  height: 155px;
   border: solid 1px #c3c3c3!important;
   &:hover {
     border: solid 1px #0068c5!important;
     background: #0068c5;
   }
+  margin-right: -15px;
+  margin-left: -15px;
 }
 @mixin p-our-service {
   color: #3f3f3f;
@@ -184,3 +193,13 @@ body {
     margin-top: 18px;
   }
 }
+  @include breakpoint($bs-xx){
+
+  }
+  @include breakpoint($bs-lg){
+
+  }
+
+  @include breakpoint($bs-md){
+
+  }

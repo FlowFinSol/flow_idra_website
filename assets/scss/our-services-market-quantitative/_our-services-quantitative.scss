@@ -1,5 +1,4 @@
 .our-service-quantitative {
-  height: 1000px;
   p {
     color: #3f3f3f;
   }
@@ -13,6 +12,69 @@
       p {
         @include p-our-service;
       }
+    }
+  }
+  @include breakpoint($bs-xx){
+    padding-bottom: 100px;
+    .quantitative-research {
+      .list-quantitative-research {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+    }
+    .border{
+      border: none;
+    }
+  }
+  @include breakpoint($bs-lg){
+    .menu-title{
+      display: none;
+    }
+    .content{
+      padding-bottom: 50px;
+    }
+    button {
+      margin-top: 50px;
+    }
+
+  }
+    @include breakpoint($bs-md){
+      .quantitative-research {
+        .list-quantitative-research {
+          padding-bottom: 15px;
+        }
+      }
+        .title-page{
+          background-color: #0068c5;
+        .menu-title{
+          display: none;
+        }
+      h3{
+        display: none;
+      }
+      h5{
+          margin-top: 28px;
+      }
+      &::before {
+        width: 100%;
+        content: 'our services';
+        color: #fff;
+        text-align: center;
+        font-family: 'Montserrat', serif;
+        font-size: 26px;
+        margin-top:-200px;
+        position: absolute;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+      .item-table{
+        .border{
+          height: auto;
+         }
+         padding-bottom: 30px;
     }
   }
 }
