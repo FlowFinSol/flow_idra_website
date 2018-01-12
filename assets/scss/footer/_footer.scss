@@ -18,8 +18,8 @@
     @include flex-footer;
     padding-top: 40px;
     .info-footer {
-      img {
-        width: 200px;
+      span {
+        font-size: 35px;
       }
     }
     .flex-footer-2 {
@@ -73,13 +73,14 @@
     }
     .footer-link {
       a{
+        font-size: 14px;
         color: #00304f;
         &:hover {
           text-decoration: underline;
         }
       }
       span {
-        margin: 0 20px;
+        margin: 0 10px;
       }
     }
   }

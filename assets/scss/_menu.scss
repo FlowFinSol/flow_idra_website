@@ -14,20 +14,18 @@ nav {
       padding: 1em 0 ;
       justify-content: space-between;
       display: flex;
-      .logo {
-        img {
-          width: 183px;
-        }
+      .fi-colored-logo-icon {
+        font-size: 35px;
       }
       .expand-button {
         background: none;
-        border-radius: 3px;
         outline: none;
         border: none;
-        color: #62cdd1;
+        color: white;
         cursor: pointer;
         display: none;
         font-size: 14px;
+        font-size: 16px;
       }
     }
     .menu {
@@ -65,23 +63,7 @@ nav {
       }
     }
   }
-  @include breakpoint($bs-xx){
-    .top-bar {
-      .left-items {
-        .logo {
-          img {
-            width: 100px;
-          }
-        }
-      }
-      .menu {
-        a {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  @include breakpoint($bs-md){
+  @include breakpoint($bs-lg){
     padding-bottom: .5em;
     background: transparent;
     .top-bar {
