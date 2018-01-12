@@ -35,7 +35,7 @@
     padding: 0 40px;
   }
   .flex {
-    height: 580px;
+    height: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,6 +56,18 @@
     }
     p {
       padding: 0 40px;
+    }
+    @include breakpoint($bs-xl){
+      height: 580px;
+    }
+    @include breakpoint($bs-lg){
+      height: 560px;
+    }
+    @include breakpoint($bs-md){
+      height: 700px;
+    }
+    @include breakpoint($bs-sm){
+      height: 580px;
     }
   }
 }
