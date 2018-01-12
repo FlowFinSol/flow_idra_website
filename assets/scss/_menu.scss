@@ -56,10 +56,12 @@ nav {
     .right-items {
       padding-top: 23px;
       display: flex;
-      img {
+      span {
         opacity: 0.7;
         padding-right: 30px;
-        height: 16px;
+      }
+      @include breakpoint($bs-lg){
+        display: none;
       }
     }
   }

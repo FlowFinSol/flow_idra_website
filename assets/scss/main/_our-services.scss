@@ -14,15 +14,15 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      span {
+        font-size: 120px;
+      }
       h5 {
         padding: 40px 0 10px;
       }
       p {
         color: #3f3f3f;
         padding-right: 30px;
-      }
-      img {
-        height: 142px;
       }
     }
   }
@@ -34,9 +34,6 @@
         p {
           padding-right: 10px;
         }
-        img {
-          height: 120px;
-        }
       }
     }
   }
@@ -47,8 +44,8 @@
         p {
           padding-right: 5px;
         }
-        img {
-          height: 100px;
+        span {
+          font-size: 90px;
         }
       }
     }
@@ -67,8 +64,8 @@
         p {
           display: none;
         }
-        img {
-          height: 140px;
+        span {
+          font-size: 120px;
         }
       }
     }
