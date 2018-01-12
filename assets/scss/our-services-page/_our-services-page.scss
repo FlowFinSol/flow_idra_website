@@ -21,7 +21,12 @@
     color: #3f3f3f;
   }
   .research-services {
+    p {
+      padding-left: 24px;
+    }
     .quantitative {
+      // margin-top: 34px;
+      // height: 480px;
       padding: 50px;
       margin-top: 24px;
       background-image: url("../img/bg-researchservices@2x.jpg");
@@ -73,7 +78,8 @@
     }
   }
   .market-sectors {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     vertical-align: middle;
     h4 {
       margin-bottom: 45px;

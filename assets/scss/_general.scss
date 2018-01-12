@@ -21,9 +21,7 @@ body {
     color: #212121;
     letter-spacing: 0.4px;
     text-transform: uppercase;
-    img {
-      margin-top: -6px;
-      height: 30px;
+    .fi-title-icon {
       padding-right: 20px;
     }
   }
@@ -175,6 +173,14 @@ body {
           padding-left: 0;
           color: white;
         }
+      }
+    }
+  }
+  @include breakpoint($bs-xl){
+    .menu-title {
+      a {
+        font-size: 14px;
+        padding-right: 6px;
       }
     }
   }

@@ -24,6 +24,7 @@
     margin-bottom: 70px;
   }
   .slide {
+    padding: 0 30px;
     padding-bottom: 10px;
     img {
       padding-bottom: 30px
@@ -59,7 +60,8 @@
     font-size: 20px;
     padding-right: 30px;
   }
-  img {
+  span {
+    color: white;
     background: #0068c5;
     height: 35px;
     padding: 8px 6px;

@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/js/vendors/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/js/vendors/owl.theme.default.min.css">
   <style type="text/css">
   	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
   	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -38,11 +40,6 @@
             <a href="news-and-publications.html">NEWS</a>
             <a href="contact.html">CONTACT</a>
           </div>
-          <div class="right-items">
-            <!-- <img src="assets/img/icon/search.svg" alt=""> -->
-            <img src="assets/img/icon/language.svg" alt="">
-            <p class="language">En</p>
-          </div>
         </div>
       </div>
     </nav>
@@ -55,8 +52,10 @@
           Our clients include private companies, multinationals,
           international institutions and everyone in-between.</p>
       <div class="read-more">
-        <p>READ MORE</p>
-        <a href="#read-more"><img src="assets/img/icon/readmore-arrow.svg"></a>
+        <a href="#read-more">
+          <p>READ MORE</p>
+          <span class="fi-readmore-arrow-icon"></span>
+        </a>
       </div>
     </div>
   </div>
@@ -64,14 +63,14 @@
   <!-- OUR SERVICES -->
   <div id="read-more" class="container">
     <div class="our-services">
-      <h3><img src="assets/img/icon/h1.svg"> OUR SERVICES</h3>
+      <h3><span class="fi-title-icon"><span class="path1"></span><span class="path2"></span></span> OUR SERVICES</h3>
       <hr />
       <div class="content-our-services">
         <div class="row">
-          <div class="col-4">
+          <div class="col-sm-4 col-12">
             <div class="services-list">
               <div>
-                <img src="assets/img/market-research-icon.svg">
+                <span class="fi-market-research-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
                 <h5>Market Research</h5>
                 <p>Insights into why things happen, Foresight to see what lies ahead and Innovative solutions
                 to tackle development problems.</p>
@@ -83,10 +82,10 @@
               <button><a href="our-services.html">FIND OUT MORE</a></button>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-4 col-12">
             <div class="services-list">
               <div>
-                <img src="assets/img/media-intelligence-icon.svg">
+                <span class="fi-media-intelligence-icon"><span class="path1"></span><span class="path2"></span></span>
                 <h5>Media Intelligence</h5>
                 <p>Professional media monitoring and advertising intelligence solutions in Vietnam.</p>
                 <p>We cover TV, Print, Radio, Online and OOH media and help clients interpret trends and information so
@@ -99,10 +98,10 @@
             </div>
 
           </div>
-          <div class="col-4">
+          <div class="col-sm-4 col-12">
             <div class="services-list">
               <div>
-                <img src="assets/img/software-developement-icon.svg">
+                <span class="fi-software-developement-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
                 <h5>Software Developement</h5>
                 <p>Our Coders Your Success</p>
                 <p>On time, on budget, every time. When it’s time to build your next site, app, or you just need extra expertise
@@ -124,53 +123,42 @@
     <div class="container">
       <div class="our-clients-content">
         <div>
-          <h3><img src="assets/img/icon/h1.svg"> OUR CLIENTS</h3>
+          <h3><span class="fi-title-icon"><span class="path1"></span><span class="path2"></span></span> OUR CLIENTS</h3>
           <hr />
         </div>
-          <div class="grid-container">
-            <div class="item1"><img src="assets/img/client_logo/theworldbank-logo@2x.png"></div>
-            <div class="item3"><img src="assets/img/client_logo/coca-logo@2x.png"></div>
-            <div class="item4"><img src="assets/img/client_logo/henkel-logo@2x.png"></div>
-            <div class="item5"><img src="assets/img/client_logo/telemetrix-logo@2x.png"></div>
-            <div class="item6"><img src="assets/img/client_logo/vodafone-logo@2x.png"></div>
-            <div class="item7"><img src="assets/img/client_logo/raiffeisen-logo@2x.png"></div>
-            <div class="item2"><img src="assets/img/client_logo/giz-logo@2x.png"></div>
-            <div class="item8"><img src="assets/img/client_logo/ifc-logo@2x.png"></div>
-            <div class="item8"><img src="assets/img/client_logo/undp-logo@2x.png"></div>
-          </div>
+        <div class="grid-container">
+          <div class="item1"><img src="assets/img/client_logo/theworldbank-logo@2x.png"></div>
+          <div class="item3"><img src="assets/img/client_logo/coca-logo@2x.png"></div>
+          <div class="item2"><img src="assets/img/client_logo/giz-logo@2x.png"></div>
+          <div class="item4"><img src="assets/img/client_logo/henkel-logo@2x.png"></div>
+          <div class="item5"><img src="assets/img/client_logo/telemetrix-logo@2x.png"></div>
+          <div class="item6"><img src="assets/img/client_logo/vodafone-logo@2x.png"></div>
+          <div class="item7"><img src="assets/img/client_logo/raiffeisen-logo@2x.png"></div>
+          <div class="item8"><img src="assets/img/client_logo/ifc-logo@2x.png"></div>
+          <div class="item9"><img src="assets/img/client_logo/undp-logo@2x.png"></div>
+        </div>
       </div>
     </div>
   </div>
   <!-- END OUR CLIENT -->
-  <!-- NEWS AND PUBLICATIONS -->
   <div class="news">
-    <br>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li type="square" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li type="square" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li type="square" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li type="square" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      </ol>
-
-    <!-- Wrapper for slides -->
     <div class="container">
-      <h3><img src="assets/img/icon/h1.svg"> NEWS</h3>
+      <h3><span class="fi-title-icon"><span class="path1"></span><span class="path2"></span></span> NEWS</h3>
       <hr />
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-4">
+      <div class="slide">
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 1.jpg">
                   <p><b>IDRA opens office in Vietnam, a new market, a new challen…</b></p>
                   <p>Starting from November 2017, IDRA has joined forces with Flow Financial Ltd., a US based compa…</p>
                 </div>
-                <button>VIEW ARTICLE</button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 2.jpg">
@@ -180,7 +168,7 @@
                 <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 3.jpg">
@@ -190,123 +178,73 @@
                 <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 1.jpg">
                   <p><b>IDRA opens office in Vietnam, a new market, a new challen…</b></p>
                   <p>Starting from November 2017, IDRA has joined forces with Flow Financial Ltd., a US based compa…</p>
                 </div>
-                <button><a href="">VIEW ARTICLE</a></button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 2.jpg">
                   <p><b>A citizen-centered project is launched, supported by the…</b></p>
                   <p>On Tuesday, November 14th, in integrated center, ADISA Fier was launched of the project "Suppor...</p>
                 </div>
-                <button><a href="">VIEW ARTICLE</a></button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 3.jpg">
                   <p><b>Financial and Non-Financial Tools supporting SMEs</b></p>
                   <p>This report analyzes the main institutions involved in the promotion and financing of SM…</p>
                 </div>
-                <button><a href="">VIEW ARTICLE</a></button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 1.jpg">
                   <p><b>IDRA opens office in Vietnam, a new market, a new challen…</b></p>
                   <p>Starting from November 2017, IDRA has joined forces with Flow Financial Ltd., a US based compa…</p>
                 </div>
-                <button><a href="">VIEW ARTICLE</a></button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 2.jpg">
                   <p><b>A citizen-centered project is launched, supported by the…</b></p>
                   <p>On Tuesday, November 14th, in integrated center, ADISA Fier was launched of the project "Suppor...</p>
                 </div>
-                <button><a href="">VIEW ARTICLE</a></button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
-            <div class="col-4">
+            <div class="item">
               <div class="flex">
                 <div>
                   <img src="assets/img/image 3.jpg">
                   <p><b>Financial and Non-Financial Tools supporting SMEs</b></p>
                   <p>This report analyzes the main institutions involved in the promotion and financing of SM…</p>
                 </div>
-                <button><a href="">VIEW ARTICLE</a></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-4">
-              <div class="flex">
-                <div>
-                  <img src="assets/img/image 1.jpg">
-                  <p><b>IDRA opens office in Vietnam, a new market, a new challen…</b></p>
-                  <p>Starting from November 2017, IDRA has joined forces with Flow Financial Ltd., a US based compa…</p>
-                </div>
-                <button><a href="">VIEW ARTICLE</a></button>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="flex">
-                <div>
-                  <img src="assets/img/image 2.jpg">
-                  <p><b>A citizen-centered project is launched, supported by the…</b></p>
-                  <p>On Tuesday, November 14th, in integrated center, ADISA Fier was launched of the project "Suppor...</p>
-                </div>
-                <button><a href="">VIEW ARTICLE</a></button>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="flex">
-                <div>
-                  <img src="assets/img/image 3.jpg">
-                  <p><b>Financial and Non-Financial Tools supporting SMEs</b></p>
-                  <p>This report analyzes the main institutions involved in the promotion and financing of SM…</p>
-                </div>
-                <button><a href="">VIEW ARTICLE</a></button>
+                <button><a href="#">VIEW ARTICLE</a></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <img src="assets/img/icon/back-arrow.svg" alt="">
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <img src="assets/img/icon/next-arrow.svg" alt="">
-    </a>
-    </div>
   </div>
 <!-- END NEWS AND PUBLICATIONS -->
-<div class="footerPage">
+  <div class="footerPage">
   <div class="container">
     <div class="flex-footer-1">
       <div class="info-footer">
@@ -342,10 +280,41 @@
   <script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
   <script src="assets/js/vendors/popper.min.js"></script>
   <script src="assets/js/vendors/bootstrap.min.js"></script>
-  <script src="assets/js/vendors/owl.carousel.min.js"></script>
   <script src="assets/js/vendors/aos.js"></script>
+  <script src="/assets/js/vendors/owl.carousel.js"></script>
   <script src="assets/js/vendors/skrollr.min.js"></script>
   <script src="assets/js/vendors/particles.min.js"></script>
   <script src="assets/js/vendors/main.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      navText: ['<img src="assets/img/icon/back-arrow.svg" alt=""/>','<img src="assets/img/icon/next-arrow.svg" alt=""/>'],
+      loop: true,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+          margin: 40
+        },
+        767: {
+          items: 2,
+          nav: false,
+          margin: 40
+        },
+        992: {
+          items: 3,
+          nav: false,
+          margin: 40
+        }
+      }
+    })
+  })
+  </script>
 </body>
 </html>
