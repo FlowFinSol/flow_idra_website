@@ -22,11 +22,10 @@
   }
   .research-services {
     .quantitative {
+      padding: 50px;
       margin-top: 24px;
-      height: 480px;
       background-image: url("../img/bg-researchservices@2x.jpg");
       background-size: cover;
-      display: flex;
       justify-content: space-between;
       align-items: center;
       p {
@@ -45,9 +44,7 @@
       }
       .quantitative-left {
         height: 360px;
-        width: 488px;
         background: white;
-        margin-left: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -56,9 +53,7 @@
       }
       .quantitative-right {
         height: 360px;
-        width: 488px;
         background: white;
-        margin-left: 20px;
       }
     }
   }
@@ -83,24 +78,48 @@
     h4 {
       margin-bottom: 45px;
     }
-    p {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      border: solid 1px #898989;
-      padding: 11px 26px;
-      height: 80px;
-      font-size: 18px;
-      line-height: 30px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 20px;
-      &:hover {
-        color: white;
-        border: solid 1px #0068c5;
-        background: #0068c5;
+    .grid-box {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      .item {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        height: 100px;
+        border: 1px solid #898989;
+        p {
+          font-size: 18px;
+          margin: 0;
+        }
       }
     }
   }
 
+  @include breakpoint($bs-lg) {
+    .research-services {
+      .quantitative {
+        .quantitative-left {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-sm) {
+    .research-services {
+      .quantitative {
+        background-image: none;
+        padding: 0;
+        .quantitative-left {
+           box-shadow: 0 9px 45px 0 rgba(0, 0, 0, 0.07), 0 9px 45px 0 rgba(0, 0, 0, 0.07);
+        }
+        .quantitative-right {
+           box-shadow: 0 9px 45px 0 rgba(0, 0, 0, 0.07), 0 9px 45px 0 rgba(0, 0, 0, 0.07);
+        }
+      }
+    }
+  }
 }
