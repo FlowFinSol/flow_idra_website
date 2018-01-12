@@ -41,6 +41,15 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
+    a {
+      color : #0068c5;
+      p {
+        color: #3f3f3f;
+      }
+      &:hover {
+        color: white;
+      }
+    }
     img {
       width: 100%;
       padding-bottom: 35px;
