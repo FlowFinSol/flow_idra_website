@@ -2,7 +2,7 @@
   padding: 100px 0;
   p {
     color: #3f3f3f;
-    padding-left: 24px;
+    padding-left: 10px;
   }
   .head-media {
     h5 {
@@ -12,7 +12,7 @@
     }
     img {
       padding-top: 40px;
-      height: 273px;
+      width: 100%;
     }
     p {
       padding-right: 25px;
@@ -23,14 +23,12 @@
     p {
       padding-bottom: 30px;
     }
-    h5 {
-      padding-left: 24px;
+    h6 {
       padding-bottom: 15px;
-      color: #212121;
     }
     .li {
-      padding-bottom: 50px;
-      padding-left: 40px;
+      padding-bottom: 40px;
+      padding-left: 20px;
       li {
         padding: 0 0 8px 10px;
       }
@@ -62,6 +60,13 @@
       padding-bottom: 40px;
       p {
         padding-left: 0px;
+      }
+    }
+  }
+  @include breakpoint($bs-lg) {
+    .head-media {
+      h5 {
+        border-left: none;
       }
     }
   }

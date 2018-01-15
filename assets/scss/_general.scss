@@ -24,6 +24,9 @@ body {
     .fi-title-icon {
       padding-right: 20px;
     }
+    @include breakpoint($bs-sm){
+      padding-left: 20px;
+    }
   }
   h4 {
     font-family: 'Montserrat', sans-serif;
@@ -57,7 +60,7 @@ body {
     font-size: 16px;
     line-height: 28px;
   }
-  button {
+  .button-a {
     transition: all .2s ease-in-out;
     font-size: 14px;
     padding: 7px 15px 5px;

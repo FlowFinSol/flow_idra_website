@@ -28,22 +28,26 @@
   img {
     width: inherit;
   }
-  button {
+  .button-a {
     margin: 20px 0 40px 40px;
   }
   .slide {
     padding: 0 40px;
   }
   .flex {
-    height: 540px;
+    // height: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
     a {
-      color : #0068c5;
       p {
+        overflow: hidden;
+        display: inline-block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
         color: #3f3f3f;
       }
       &:hover {
@@ -55,19 +59,62 @@
       padding-bottom: 35px;
     }
     p {
-      padding: 0 40px;
+      overflow: hidden;
+      display: inline-block;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      padding: 0 20px;
     }
-    @include breakpoint($bs-xl){
-      height: 580px;
-    }
-    @include breakpoint($bs-lg){
-      height: 560px;
-    }
+    // @include breakpoint($bs-xl){
+    //   height: 516px;
+    // }
+    // @include breakpoint($bs-lg){
+    //   height: 540px;
+    // }
     @include breakpoint($bs-md){
-      height: 700px;
+      // height: 585px;
+      a {
+        p {
+          -webkit-line-clamp: 2;
+        }
+      }
+      p {
+        -webkit-line-clamp: 3;
+      }
     }
-    @include breakpoint($bs-sm){
-      height: 580px;
+    // @include breakpoint($bs-sm){
+    //   height: 600px;
+    // }
+  }
+  .carousel-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    .carousel-nav-prev, .carousel-nav-next {
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      &:active {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  @include breakpoint($bs-lg) {
+    .carousel-nav {
+      display: none;
     }
   }
 }

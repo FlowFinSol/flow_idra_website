@@ -16,6 +16,7 @@
   }
 }
 .news-detail {
+  position: relative;
   padding: 100px 0;
   p {
     color: #212121;
@@ -26,8 +27,60 @@
   .slide {
     padding: 0 30px;
     padding-bottom: 10px;
-    img {
-      padding-bottom: 30px
+    .flex {
+      // height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: white;
+      a {
+        margin-top: 40px;
+        color : #0068c5;
+        p {
+          overflow: hidden;
+          display: inline-block;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          color: #3f3f3f;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+      img {
+        width: 100%;
+        padding-bottom: 35px;
+      }
+      p {
+        overflow: hidden;
+        display: inline-block;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        padding: 0 20px;
+      }
+      // @include breakpoint($bs-xl){
+      //   height: 475px;
+      // }
+      // @include breakpoint($bs-lg){
+      //   height: 505px;
+      // }
+      @include breakpoint($bs-md){
+        // height: 555px;
+        a {
+          p {
+            -webkit-line-clamp: 2;
+          }
+        }
+        p {
+          -webkit-line-clamp: 3;
+        }
+      }
+      // @include breakpoint($bs-sm){
+      //   height: 590px;
+      // }
     }
   }
   .list-news {
@@ -43,7 +96,15 @@
       line-height: 16px;
     }
     img {
-      width: 95%;
+      width: 100%;
+    }
+    @include breakpoint($bs-sm){
+      p {
+        padding-left: 30px;
+      }
+      img {
+        padding:0 20px;
+      }
     }
   }
   .carousel-control-prev,
@@ -53,24 +114,59 @@
       padding-bottom: 0;
     }
   }
+  .carousel-nav {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    .carousel-nav-prev, .carousel-nav-next {
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      &:active {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  @include breakpoint($bs-lg) {
+    .carousel-nav {
+      display: none;
+    }
+  }
 }
+
 .pagination {
   justify-content: center;
   li {
-    font-size: 20px;
-    padding-right: 30px;
+    padding-right: 35px;
+    a {
+      font-size: 20px;
+      color: #3f3f3f;
+    }
   }
   span {
     color: white;
     background: #0068c5;
     height: 35px;
-    padding: 8px 6px;
-    margin: -2px 50px 0 30px;
+    padding: 10px 12px;
+    margin: -4px 50px 0 30px;
   }
   .active {
     a {
-      font-size: 22px;
-      font-weight: bold;
+      color: #0068c5;
+      font-size: 24px;
+      // font-weight: bold;
     }
   }
 }

@@ -21,12 +21,7 @@
     color: #3f3f3f;
   }
   .research-services {
-    p {
-      padding-left: 24px;
-    }
     .quantitative {
-      // margin-top: 34px;
-      // height: 480px;
       padding: 50px;
       margin-top: 24px;
       background-image: url("../img/bg-researchservices@2x.jpg");
@@ -37,19 +32,11 @@
         font-size: 20px;
         line-height: 30px;
         color: #0068c5;
-        padding-left: 60px;
-        padding-top: 60px;
-      }
-      li {
-        padding-left: 70px;
-      }
-      button {
-        margin-top: 40px;
-        margin-left: 60px;
       }
       .quantitative-left {
         height: 360px;
         background: white;
+        padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -59,6 +46,11 @@
       .quantitative-right {
         height: 360px;
         background: white;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
       }
     }
   }
@@ -105,7 +97,7 @@
           margin: 0;
         }
         &:hover {
-          background: #898989;
+          background: #0068c5;
           p {
             color: white;
           }
