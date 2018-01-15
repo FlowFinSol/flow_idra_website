@@ -41,6 +41,13 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
+    .truncat {
+      overflow: hidden;
+      display: inline-block;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
     a {
       color : #0068c5;
       p {
@@ -57,18 +64,18 @@
     p {
       padding: 0 40px;
     }
-    @include breakpoint($bs-xl){
-      height: 580px;
-    }
-    @include breakpoint($bs-lg){
-      height: 560px;
-    }
-    @include breakpoint($bs-md){
-      height: 700px;
-    }
-    @include breakpoint($bs-sm){
-      height: 580px;
-    }
+    // @include breakpoint($bs-xl){
+    //   height: 580px;
+    // }
+    // @include breakpoint($bs-lg){
+    //   height: 560px;
+    // }
+    // @include breakpoint($bs-md){
+    //   height: 700px;
+    // }
+    // @include breakpoint($bs-sm){
+    //   height: 590px;
+    // }
   }
 }
 .owl-theme {

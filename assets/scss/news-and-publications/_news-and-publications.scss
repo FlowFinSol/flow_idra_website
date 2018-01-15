@@ -43,7 +43,15 @@
       line-height: 16px;
     }
     img {
-      width: 95%;
+      width: 100%;
+    }
+    @include breakpoint($bs-sm){
+      p {
+        padding-left: 30px;
+      }
+      img {
+        padding:0 20px;
+      }
     }
   }
   .carousel-control-prev,
@@ -57,20 +65,24 @@
 .pagination {
   justify-content: center;
   li {
-    font-size: 20px;
-    padding-right: 30px;
+    padding-right: 35px;
+    a {
+      font-size: 20px;
+      color: #3f3f3f;
+    }
   }
   span {
     color: white;
     background: #0068c5;
     height: 35px;
-    padding: 8px 6px;
-    margin: -2px 50px 0 30px;
+    padding: 10px 12px;
+    margin: -4px 50px 0 30px;
   }
   .active {
     a {
-      font-size: 22px;
-      font-weight: bold;
+      color: #0068c5;
+      font-size: 24px;
+      // font-weight: bold;
     }
   }
 }

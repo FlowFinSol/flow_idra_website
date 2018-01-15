@@ -6,7 +6,6 @@
 }
 .footerPage {
   background: #f6f6f6;
-  // height: 370px;
   color: #00304f;
   .un-opacity {
     opacity: 1;
@@ -25,12 +24,6 @@
     }
     .flex-footer-2 {
       display: flex;
-      img {
-        opacity: 1;
-        padding: 0px;
-        width: 25px;
-        margin-right: 10px;
-      }
       .padding-flex-footer-2 {
         .site-contents {
           display: flex;
@@ -41,20 +34,6 @@
             &:hover {
               opacity: 1;
             }
-          }
-        }
-      }
-      .follow-us {
-        margin-top: -3px;
-        img {
-          height: 25px;
-          opacity: 1;
-        }
-        .follow-us-content {
-          display: flex;
-          flex-direction: row;
-          p {
-            opacity: 0.7;
           }
         }
       }
