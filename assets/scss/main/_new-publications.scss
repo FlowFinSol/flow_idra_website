@@ -84,6 +84,9 @@
         -webkit-line-clamp: 3;
       }
     }
+    @include breakpoint($bs-sm){
+      height: 600px;
+    }
   }
   .carousel-nav {
     position: absolute;
