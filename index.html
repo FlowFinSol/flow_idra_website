@@ -147,7 +147,8 @@
               <div class="flex">
                 <div>
                   <a href="news-and-publications-details.html"><img src="assets/img/image 1.jpg">
-                  <p><b>IDRA opens office in Vietnam, a new market, a new challen…</b></p></a>
+                    <p><b>IDRA opens office in Vietnam, a new market, a new challen…</b></p>
+                  </a>
                   <p>Starting from November 2017, IDRA has joined forces with Flow Financial Ltd., a US based compa…</p>
                 </div>
                 <button><a href="news-and-publications-details.html">VIEW ARTICLE</a></button>
@@ -235,6 +236,14 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <div class="carousel-nav-prev">
+        <span class="fi-back-arrow-icon"></span>
+      </div>
+      <div class="carousel-nav-next">
+        <span class="fi-next-arrow-icon"></span>
       </div>
     </div>
   </div>
@@ -279,10 +288,11 @@
   <script src="assets/js/vendors/main.js"></script>
   <script>
   $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
+    const owl = $('.owl-carousel')
+    owl.owlCarousel({
       loop: true,
       margin: 10,
-      // navText: ['<img src="assets/img/icon/back-arrow.svg" alt=""/>','<img src="assets/img/icon/next-arrow.svg" alt=""/>'],
+      lazyLoad: true,
       loop: true,
       autoplay:true,
       autoplayTimeout:3000,
@@ -305,6 +315,12 @@
           margin: 40
         }
       }
+    })
+    $('.carousel-nav-next').click(function() {
+      owl.trigger('next.owl.carousel');
+    })
+    $('.carousel-nav-prev').click(function() {
+      owl.trigger('prev.owl.carousel');
     })
   })
   </script>

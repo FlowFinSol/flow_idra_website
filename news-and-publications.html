@@ -46,6 +46,14 @@
     </div>
   </div>
   <div class="news-detail">
+    <div class="carousel-nav">
+      <div class="carousel-nav-prev">
+        <span class="fi-back-arrow-icon"></span>
+      </div>
+      <div class="carousel-nav-next">
+        <span class="fi-next-arrow-icon"></span>
+      </div>
+    </div>
     <div class="container">
       <div class="slide">
       <div class="row">
@@ -114,7 +122,9 @@
       </div>
     </div>
     </div>
-    <hr />
+  </div>
+  <hr />
+  <div class="news-detail">
   <div class="list-news">
     <div class="container">
       <div class="row">
@@ -211,7 +221,8 @@
 <script src="assets/js/vendors/main.js"></script>
 <script>
 $(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
+  const owl = $('.owl-carousel')
+  owl.owlCarousel({
     loop: true,
     margin: 10,
     // navText: ['<img src="assets/img/icon/back-arrow.svg" alt=""/>','<img src="assets/img/icon/next-arrow.svg" alt=""/>'],
@@ -237,6 +248,12 @@ $(document).ready(function() {
         margin: 40
       }
     }
+  })
+  $('.carousel-nav-next').click(function() {
+    owl.trigger('next.owl.carousel');
+  })
+  $('.carousel-nav-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
   })
 })
 </script>
