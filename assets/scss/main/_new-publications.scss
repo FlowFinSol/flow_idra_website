@@ -28,21 +28,20 @@
   img {
     width: inherit;
   }
-  button {
+  .button-a {
     margin: 20px 0 40px 40px;
   }
   .slide {
     padding: 0 40px;
   }
   .flex {
-    height: 550px;
+    height: 510px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
     a {
-      color : #0068c5;
       p {
         overflow: hidden;
         display: inline-block;
@@ -65,14 +64,14 @@
       display: -webkit-box;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
-      padding: 0 40px;
+      padding: 0 20px;
     }
-    @include breakpoint($bs-xl){
-      height: 516px;
-    }
-    @include breakpoint($bs-lg){
-      height: 540px;
-    }
+    // @include breakpoint($bs-xl){
+    //   height: 516px;
+    // }
+    // @include breakpoint($bs-lg){
+    //   height: 540px;
+    // }
     @include breakpoint($bs-md){
       height: 585px;
       a {
