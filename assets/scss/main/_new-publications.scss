@@ -35,22 +35,20 @@
     padding: 0 40px;
   }
   .flex {
-    height: 540px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
-    overflow: hidden;
-    display: inline-block;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    // .truncat {
-    // }
     a {
       color : #0068c5;
       p {
+        overflow: hidden;
+        display: inline-block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
         color: #3f3f3f;
       }
       &:hover {
@@ -62,20 +60,30 @@
       padding-bottom: 35px;
     }
     p {
+      overflow: hidden;
+      display: inline-block;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
       padding: 0 40px;
     }
-    // @include breakpoint($bs-xl){
-    //   height: 580px;
-    // }
-    // @include breakpoint($bs-lg){
-    //   height: 560px;
-    // }
-    // @include breakpoint($bs-md){
-    //   height: 700px;
-    // }
-    // @include breakpoint($bs-sm){
-    //   height: 590px;
-    // }
+    @include breakpoint($bs-xl){
+      height: 516px;
+    }
+    @include breakpoint($bs-lg){
+      height: 540px;
+    }
+    @include breakpoint($bs-md){
+      height: 585px;
+      a {
+        p {
+          -webkit-line-clamp: 2;
+        }
+      }
+      p {
+        -webkit-line-clamp: 3;
+      }
+    }
   }
   .carousel-nav {
     position: absolute;
