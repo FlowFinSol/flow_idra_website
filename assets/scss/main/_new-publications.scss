@@ -35,7 +35,7 @@
     padding: 0 40px;
   }
   .flex {
-    height: 540px;
+    // height: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,7 +73,7 @@
     //   height: 540px;
     // }
     @include breakpoint($bs-md){
-      height: 585px;
+      // height: 585px;
       a {
         p {
           -webkit-line-clamp: 2;
@@ -83,9 +83,9 @@
         -webkit-line-clamp: 3;
       }
     }
-    @include breakpoint($bs-sm){
-      height: 600px;
-    }
+    // @include breakpoint($bs-sm){
+    //   height: 600px;
+    // }
   }
   .carousel-nav {
     position: absolute;
