@@ -18,6 +18,7 @@
     @include flex-footer;
     padding: 40px 0 20px;
     .info-footer {
+      margin: auto 0;
       span {
         font-size: 35px;
       }
@@ -37,8 +38,9 @@
       .padding-flex-footer-2 {
         .site-contents {
           display: flex;
-          flex-direction: column;
+          // flex-direction: column;
           a {
+            margin-right: 20px;
             color: #00304f;
             opacity: 0.7;
             &:hover {
@@ -79,7 +81,17 @@
     .flex-footer-1 {
       flex-direction: column;
       .info-footer{
-        margin-bottom: 20px;
+        margin: 0 0 20px;
+      }
+      .flex-footer-2 {
+        .padding-flex-footer-2 {
+          .site-contents {
+            flex-direction: column;
+            a {
+              margin-right: 0;
+            }
+          }
+        }
       }
     }
     .flex-footer-3 {
