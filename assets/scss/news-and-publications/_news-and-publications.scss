@@ -28,7 +28,7 @@
     padding: 0 30px;
     padding-bottom: 10px;
     .flex {
-      height: 520px;
+      // height: 520px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -60,14 +60,14 @@
         -webkit-box-orient: vertical;
         padding: 0 20px;
       }
-      @include breakpoint($bs-xl){
-        height: 475px;
-      }
-      @include breakpoint($bs-lg){
-        height: 505px;
-      }
+      // @include breakpoint($bs-xl){
+      //   height: 475px;
+      // }
+      // @include breakpoint($bs-lg){
+      //   height: 505px;
+      // }
       @include breakpoint($bs-md){
-        height: 555px;
+        // height: 555px;
         a {
           p {
             -webkit-line-clamp: 2;
@@ -77,9 +77,9 @@
           -webkit-line-clamp: 3;
         }
       }
-      @include breakpoint($bs-sm){
-        height: 590px;
-      }
+      // @include breakpoint($bs-sm){
+      //   height: 590px;
+      // }
     }
   }
   .list-news {
