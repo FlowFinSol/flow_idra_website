@@ -222,48 +222,49 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 <script src="assets/js/vendors/main.js"></script>
-<script>
-$(document).ready(function() {
-  const owl = $('.owl-carousel')
-  owl.owlCarousel({
-    loop: true,
-    margin: 10,
-    // navText: ['<img src="assets/img/icon/back-arrow.svg" alt=""/>','<img src="assets/img/icon/next-arrow.svg" alt=""/>'],
-    loop: true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-        margin: 40
-      },
-      767: {
-        items: 1,
-        nav: false,
-        margin: 40
-      },
-      991: {
-        items: 2,
-        nav: false,
-        margin: 40
-      },
-      1199: {
-        items: 3,
-        nav: false,
-        margin: 40
-      }
-    }
-  })
-  $('.carousel-nav-next').click(function() {
-    owl.trigger('next.owl.carousel');
-  })
-  $('.carousel-nav-prev').click(function() {
-    owl.trigger('prev.owl.carousel');
-  })
-})
-</script>
+<script src="assets/js/vendors/owl_carousel.js"></script>
+<!-- <script>
+// $(document).ready(function() {
+//   const owl = $('.owl-carousel')
+//   owl.owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     // navText: ['<img src="assets/img/icon/back-arrow.svg" alt=""/>','<img src="assets/img/icon/next-arrow.svg" alt=""/>'],
+//     loop: true,
+//     autoplay:true,
+//     autoplayTimeout:3000,
+//     autoplayHoverPause:true,
+//     responsiveClass: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//         nav: false,
+//         margin: 40
+//       },
+//       767: {
+//         items: 1,
+//         nav: false,
+//         margin: 40
+//       },
+//       991: {
+//         items: 2,
+//         nav: false,
+//         margin: 40
+//       },
+//       1199: {
+//         items: 3,
+//         nav: false,
+//         margin: 40
+//       }
+//     }
+//   })
+//   $('.carousel-nav-next').click(function() {
+//     owl.trigger('next.owl.carousel');
+//   })
+//   $('.carousel-nav-prev').click(function() {
+//     owl.trigger('prev.owl.carousel');
+//   })
+// })
+</script> -->
 </body>
 </html>
