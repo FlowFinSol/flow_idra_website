@@ -41,13 +41,13 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: white;
-    .truncat {
-      overflow: hidden;
-      display: inline-block;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
+    overflow: hidden;
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    // .truncat {
+    // }
     a {
       color : #0068c5;
       p {
