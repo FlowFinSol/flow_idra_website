@@ -246,7 +246,14 @@ body {
   background: #0068c5;
   cursor: pointer;
   z-index: 1;
+  transition: all .2s ease-in-out;
   span {
     color: white;
+  }
+  &:hover {
+    background-color: #094c88;
+  }
+  &:active {
+    background-color: #06345d;
   }
 }
