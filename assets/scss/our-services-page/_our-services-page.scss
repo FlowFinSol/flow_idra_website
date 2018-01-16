@@ -1,20 +1,3 @@
-.our-services-menu {
-  height: 400px;
-  background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-ourservices@2x.jpg);
-  background-size: cover;
-  position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    background: white;
-    height: 100px;
-    bottom: -90px;
-    left: 0;
-    right: 0;
-    transform: skewY(0.6deg);
-  }
-}
 .our-service-detail {
   padding: 100px 0;
   p {
