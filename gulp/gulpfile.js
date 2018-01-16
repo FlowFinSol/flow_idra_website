@@ -21,11 +21,9 @@ gulp.task('serve', ['sass'], function() {
   gulp.watch(path + "/assets/scss/main/*.scss", ['sass']);
   gulp.watch(path + "/assets/scss/news-and-publications/*.scss", ['sass']);
   gulp.watch(path + "/assets/scss/news-and-publications-details/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-market-qualitative/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-market-quantitative/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-media-intelligence/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/our-services-page/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/our-services/*.scss", ['sass']);
   gulp.watch(path + "/*.html").on('change', browserSync.reload);
+  gulp.watch(path + "/page/our-services/*.html").on('change', browserSync.reload);
   gulp.watch(path + "/assets/js/vendors/*.js").on('change', browserSync.reload);
 });
 
