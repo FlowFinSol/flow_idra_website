@@ -19,6 +19,7 @@
   position: relative;
   padding: 100px 0 45px 0 ;
   p {
+    margin-bottom: 0;
     color: #212121;
   }
   hr {
@@ -35,7 +36,7 @@
       align-items: flex-start;
       background-color: white;
       a {
-        margin: 40px 0 0 20px;;
+        margin: 40px 0 0 0px;;
         color : #0068c5;
         p {
           overflow: hidden;
@@ -59,7 +60,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
-        padding: 0 20px;
+        // padding: 0 20px;
       }
       // @include breakpoint($bs-xl){
       //   height: 475px;
@@ -171,13 +172,16 @@
   }
 }
 .more {
-  text-align: center;
-  font-size: 26px;
-  padding-bottom: 60px;
-  padding-top: 30px;
-  b{
-    a {
-      color: #3f3f3f;
+  p {
+    letter-spacing: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 80px;
+    padding-top: 40px;
+    color: #3f3f3f;
+    &:hover {
+      color: #0068c5;
     }
   }
 }

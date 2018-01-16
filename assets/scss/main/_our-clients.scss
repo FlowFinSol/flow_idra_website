@@ -23,7 +23,7 @@
     }
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
       grid-gap: 40px;
       .item {
         z-index: 1;
@@ -53,6 +53,7 @@
         margin-bottom: 40px;
       }
       .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         div {
           img {
             height: 52px;
