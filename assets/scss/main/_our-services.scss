@@ -16,6 +16,14 @@
       align-items: flex-start;
       span {
         font-size: 120px;
+        .path1::before {
+          transition: color .2s ease-in-out;
+        }
+        &:hover {
+          .path1::before {
+            color: #002e4c;
+          }
+        }
       }
       h5 {
         color: #3f3f3f;

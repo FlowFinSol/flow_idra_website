@@ -39,6 +39,12 @@
         border: solid 1px #0068c5;
         background: #0068c5;
       }
+      &:hover {
+        transition: all .2s ease-in-out;
+        color: white;
+        border: solid 1px #0068c5;
+        background: #0068c5;
+      }
     }
   }
 }
