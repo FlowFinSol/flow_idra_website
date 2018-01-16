@@ -84,9 +84,16 @@ nav {
     }
     &.is-expand {
       background: #55b9cd;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
       .top-bar {
         .menu {
+          padding: 0px 0;
           display: flex;
+          a {
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 5px 0;
+          }
         }
       }
     }
