@@ -26,4 +26,7 @@
   li {
     padding: 20px 0px 10px;
   }
+  @include breakpoint($bs-sm) {
+    padding: 100px 10px 0;
+  } ;
 }
