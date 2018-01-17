@@ -26,12 +26,7 @@ $(document).ready(function() {
         margin: 40
       },
       1199: {
-        items: 4,
-        nav: false,
-        margin: 40
-      },
-      1920: {
-        items: 4,
+        items: 3,
         nav: false,
         margin: 40
       }
