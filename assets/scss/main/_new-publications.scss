@@ -1,5 +1,4 @@
 .news {
-  // height: 910px;
   background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-news@2x.jpg);
   background-size: cover;
   padding-bottom: 55px;
@@ -29,13 +28,12 @@
     width: inherit;
   }
   .button-a {
-    margin: 20px 0 40px 10px;
+    margin: 20px 0 40px 40px;
   }
   .slide {
     padding: 0 40px;
   }
   .flex {
-    // height: 540px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,7 +44,8 @@
         overflow: hidden;
         display: inline-block;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 2;
+        height: 55px;
         -webkit-box-orient: vertical;
         color: #3f3f3f;
       }
@@ -62,30 +61,11 @@
       overflow: hidden;
       display: inline-block;
       display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
+      height: 86px;
       -webkit-box-orient: vertical;
-      padding: 0 10px;
+      padding: 0 40px;
     }
-    // @include breakpoint($bs-xl){
-    //   height: 516px;
-    // }
-    // @include breakpoint($bs-lg){
-    //   height: 540px;
-    // }
-    @include breakpoint($bs-md){
-      // height: 585px;
-      a {
-        p {
-          -webkit-line-clamp: 2;
-        }
-      }
-      p {
-        -webkit-line-clamp: 3;
-      }
-    }
-    // @include breakpoint($bs-sm){
-    //   height: 600px;
-    // }
   }
   .carousel-nav {
     position: absolute;
@@ -119,32 +99,6 @@
   }
 }
 .owl-theme {
-  .owl-nav {
-    margin-top: 50px!important;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: -50%;
-    // left: -100px;
-    // width: 121%;
-    img {
-      background: black!important;
-      padding: 20px;
-      height: 70px;
-    }
-    .owl-prev{
-      // position: relative;
-      // margin-left: -20%;
-      // background: none!important;
-      // @include breakpoint($bs-xl){
-      //   left: -5%;
-      // }
-    } .owl-next {
-      // position: relative;
-      // right: -20%;
-      // background: none!important
-    }
-  }
   .owl-dots {
     padding-top: 50px;
     .owl-dot {
