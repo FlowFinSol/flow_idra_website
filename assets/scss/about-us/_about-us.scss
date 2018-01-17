@@ -25,7 +25,11 @@
     }
   }
   li {
-    padding: 20px 0px 10px;
+    padding: 30px 0px 10px;
+  }
+  .learn-more {
+    float: right;
+    margin-bottom: 20px;
   }
   @include breakpoint($bs-sm) {
     padding: 100px 10px 0;
