@@ -2,6 +2,7 @@
   background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-head.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: center;
   color: white;
   position: relative;
   &::after {

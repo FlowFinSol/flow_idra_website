@@ -2,6 +2,7 @@
   height: 400px;
   background-image: linear-gradient(rgba(0, 45, 84, 0.7), rgba(0, 45, 84, 0.7)), url(../img/bg-aboutus.jpg);
   background-size: cover;
+  background-position-x: center;
   position: relative;
   &::after {
     content: '';
